@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Michele LINARDI – EDEM</title>
+</head>
+<body class="bg-stone-50">
+
+  <!-- ═══════════════════════════════════════════════════
+       HEADER / NAV
+  ════════════════════════════════════════════════════ -->
+  <section class="sticky top-0 z-50 w-full bg-white border-b border-stone-200 shadow-sm">
+  <header class="sticky top-0 z-50 w-full bg-white border-b border-stone-200 shadow-sm">
+    <div class="max-w-screen-xl mx-auto px-8 h-20 flex justify-between items-center gap-8">
+
+      <!-- Logo -->
+      <div class="shrink-0">
+        <img src="img/EDEM_LOGO.png" alt="Logo EDEM" class="h-16 w-auto object-contain">
+      </div>
+
+      <!-- Nav -->
+      <nav class="flex items-center gap-8">
+        <a href="index.html" class="text-stone-500 text-sm font-medium hover:text-stone-900 transition-colors">Le projet</a>
+        <a href="index.html#actualites" class="text-stone-500 text-sm font-medium hover:text-stone-900 transition-colors">Actualités</a>
+        <a href="publications.html" class="text-stone-500 text-sm font-medium hover:text-stone-900 transition-colors">Publications</a>
+        <a href="index.html#equipe" class="text-stone-500 text-sm font-medium hover:text-stone-900 transition-colors">Équipe</a>
+      </nav>
+
+      <!-- CTA + langue -->
+      <div class="flex items-center gap-5 shrink-0">
+        <a href="#" class="px-5 h-9 bg-teal-600 rounded-md inline-flex items-center text-white text-xs font-bold hover:bg-teal-700 transition-colors whitespace-nowrap">
+          Fiche ANR →
+        </a>
+        <div class="flex items-center gap-1.5">
+          <span class="text-stone-900 text-xs font-bold">FR</span>
+          <span class="text-stone-300 text-xs">|</span>
+          <a href="#" class="text-stone-400 text-xs hover:text-stone-700 transition-colors">EN</a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       CONTENU PRINCIPAL
+  ════════════════════════════════════════════════════ -->
+  <main class="w-full max-w-screen-xl mx-auto px-20 py-12 flex flex-col gap-12">
+
+    <!-- PROFIL -->
+    <div class="flex items-center gap-10">
+
+      <!-- Avatar -->
+      <div class="w-48 h-48 shrink-0 bg-green-100 rounded-full flex items-center justify-center">
+        <span class="text-emerald-900 text-5xl font-bold">ML</span>
+      </div>
+
+      <!-- Infos -->
+      <div class="flex flex-col gap-4">
+        <h1 class="text-stone-900 text-4xl font-bold">Michele LINARDI</h1>
+        <p class="text-stone-400 text-xl font-normal">Chercheur</p>
+
+        <!-- Tags compétences -->
+        <div class="flex flex-wrap gap-2">
+          <span class="px-4 py-1.5 bg-green-100 border border-emerald-900 rounded-full text-emerald-900 text-sm font-normal">Deep-Learning</span>
+          <span class="px-4 py-1.5 bg-green-100 border border-emerald-900 rounded-full text-emerald-900 text-sm font-normal">AI</span>
+          <span class="px-4 py-1.5 bg-green-100 border border-emerald-900 rounded-full text-emerald-900 text-sm font-normal">Analyse</span>
+          <span class="px-4 py-1.5 bg-green-100 border border-emerald-900 rounded-full text-emerald-900 text-sm font-normal">xAI</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRÉSENTATION -->
+    <section>
+      <h2 class="text-stone-900 text-2xl font-bold mb-3">PRÉSENTATION</h2>
+      <p class="text-stone-700 text-base font-light leading-relaxed max-w-3xl">
+        I was a Ph.D. Student in Computer Science at University Paris Descartes. My research topic concerns the Data series management and analytics. In a world where complex Big Data Analysis need to deal with Data Sequences, we study and research the possibility to provide new smart techniques for extracting knowledge from this kind of data. Our goal is clear and well defined: provide fast Data Driven discovery which is feasible only if fast query techniques are available.
+      </p>
+    </section>
+
+    <!-- PUBLICATIONS RÉCENTES -->
+    <section id="publications">
+      <h2 class="text-stone-900 text-2xl font-bold mb-6">PUBLICATIONS RÉCENTES</h2>
+
+      <div class="grid grid-cols-2 gap-4">
+
+        <!-- Publication 1 -->
+        <div class="w-full bg-white border border-teal-600 rounded-lg p-4 flex flex-col gap-3">
+          <div class="flex flex-col gap-1">
+            <p class="text-stone-900 text-base font-semibold">Titre de la publication</p>
+            <p class="text-stone-400 text-sm font-light">le 30/04/2026</p>
+            <p class="text-stone-700 text-sm font-light leading-snug">
+              Vulgarisation rapide de la publication, pas plus de 3 lignes afin d'éviter de surcharger le lecteur.
+            </p>
+          </div>
+          <div class="flex justify-between items-center">
+            <!-- Icône PDF -->
+            <div class="w-10 h-10 border border-teal-600 rounded flex items-center justify-center shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+            </div>
+            <a target="_blank" href="https://github.com" class="text-teal-600 text-sm font-light hover:underline">Consulter →</a>
+          </div>
+        </div>
+
+        <!-- Publication 2 -->
+        <div class="w-full bg-white border border-teal-600 rounded-lg p-4 flex flex-col gap-3">
+          <div class="flex flex-col gap-1">
+            <p class="text-stone-900 text-base font-semibold">Titre de la publication</p>
+            <p class="text-stone-400 text-sm font-light">le 30/04/2026</p>
+            <p class="text-stone-700 text-sm font-light leading-snug">
+              Vulgarisation rapide de la publication, pas plus de 3 lignes afin d'éviter de surcharger le lecteur.
+            </p>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="w-10 h-10 border border-teal-600 rounded flex items-center justify-center shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+            </div>
+            <a target="_blank" href="https://github.com" class="text-teal-600 text-sm font-light hover:underline">Consulter →</a>
+          </div>
+        </div>
+
+        <!-- Publication 3 -->
+        <div class="w-full bg-white border border-teal-600 rounded-lg p-4 flex flex-col gap-3">
+          <div class="flex flex-col gap-1">
+            <p class="text-stone-900 text-base font-semibold">Titre de la publication</p>
+            <p class="text-stone-400 text-sm font-light">le 30/04/2026</p>
+            <p class="text-stone-700 text-sm font-light leading-snug">
+              Vulgarisation rapide de la publication, pas plus de 3 lignes afin d'éviter de surcharger le lecteur.
+            </p>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="w-10 h-10 border border-teal-600 rounded flex items-center justify-center shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+            </div>
+            <a target="_blank" href="https://github.com" class="text-teal-600 text-sm font-light hover:underline">Consulter →</a>
+          </div>
+        </div>
+
+        <!-- Publication 4 -->
+        <div class="w-full bg-white border border-teal-600 rounded-lg p-4 flex flex-col gap-3">
+          <div class="flex flex-col gap-1">
+            <p class="text-stone-900 text-base font-semibold">Titre de la publication</p>
+            <p class="text-stone-400 text-sm font-light">le 30/04/2026</p>
+            <p class="text-stone-700 text-sm font-light leading-snug">
+              Vulgarisation rapide de la publication, pas plus de 3 lignes afin d'éviter de surcharger le lecteur.
+            </p>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="w-10 h-10 border border-teal-600 rounded flex items-center justify-center shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+            </div>
+            <a target="_blank" href="https://github.com" class="text-teal-600 text-sm font-light hover:underline">Consulter →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
