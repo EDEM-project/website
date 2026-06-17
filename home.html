@@ -316,38 +316,50 @@
       display: block;
     }
 
-    .hero-partners {
-      margin-top: 1.5rem;
-    }
-    .hero-partners p {
-      font-size: 0.7rem;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: rgba(28,25,23,0.55);
-      margin-bottom: 0.6rem;
-    }
-    .hero-partners-logos {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-    .partner-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.35rem 0.75rem;
-      border: 1.5px solid rgba(255,255,255,0.7);
-      border-radius: 6px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: var(--teal-900, #134e4a);
-      background: rgba(255,255,255,0.3);
-      backdrop-filter: blur(4px);
-      letter-spacing: 0.02em;
-    }
+/* Conteneur global du bloc partenaires */
+/* Zone globale des partenaires */
+.hero-partners {
+  margin-top: 2rem; /* Espace augmenté pour laisser respirer le bloc */
+}
 
-    /* ── SECTION BASE ── */
+/* Texte d'introduction discret */
+.hero-partners p {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(28, 25, 23, 0.45); /* Couleur calme tirée de votre palette stone */
+  margin-bottom: 1rem;
+}
+
+/* Alignement horizontal des logos */
+.hero-partners-logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* S'adapte automatiquement sur mobile en passant à la ligne */
+  gap: 2rem;       /* Grand espace entre les logos pour un rendu aéré et moderne */
+}
+
+/* Style des logos individuels */
+.partner-logo {
+  height: 58px;       /* Hauteur augmentée pour une excellente visibilité */
+  width: auto;        /* Conserve le ratio parfait de chaque logo */
+  max-width: 130px;   /* Empêche un logo très large (ex: CY Cergy) de dominer les autres */
+  object-fit: contain;
+  
+  /* Intégration esthétique : look minimaliste par défaut */
+  filter: grayscale(100%) opacity(55%);
+  
+  /* Transition fluide pour l'effet au survol */
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Effet interactif au survol (micro-interaction UX) */
+.partner-logo:hover {
+  filter: grayscale(0%) opacity(100%); /* Le logo reprend vie avec ses vraies couleurs */
+  transform: translateY(-2px) scale(1.03); /* Léger soulèvement et agrandissement discret */
+}
+/* ── SECTION BASE ── */
     .section {
       max-width: 1280px;
       margin: 0 auto;
@@ -754,15 +766,16 @@
                 allowfullscreen>
             </iframe>
           </div>
-          <div class="hero-partners">
-            <p>En partenariat avec</p>
-            <div class="hero-partners-logos">
-              <span class="partner-badge">ETIS</span>
-              <span class="partner-badge">ANR</span>
-              <span class="partner-badge">CY Cergy</span>
-              <span class="partner-badge">ENSEA</span>
+            <div class="hero-partners">
+              <p>En partenariat avec</p>
+              <div class="hero-partners-logos">
+                <img src="img/etis.png" alt="Logo du laboratoire ETIS" class="partner-logo" />
+                <img src="img/anr.jpg" alt="Logo de l'ANR (Agence Nationale de la Recherche)" class="partner-logo" />
+                <img src="img/cy.png" alt="Logo de CY Cergy Paris Université" class="partner-logo" />
+                <img src="img/ensea.png" alt="Logo de l'ENSEA" class="partner-logo" />
+              </div>
             </div>
-          </div>
+            </div>
         </div>
       </div>
     </section>
